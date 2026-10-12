@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Atikul Hoque</title>
+  <meta name="description" content="Research by Atikul Hoque on woody plant encroachment, SAR and optical fusion, drought monitoring, and vegetation phenology.">
+  <meta name="author" content="Atikul Hoque">
+  <link rel="canonical" href="https://atikul-itc.github.io/research.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research | Atikul Hoque">
+  <meta property="og:description" content="Research by Atikul Hoque on woody plant encroachment, SAR and optical fusion, drought monitoring, and vegetation phenology.">
+  <meta property="og:url" content="https://atikul-itc.github.io/research.html">
+  <meta property="og:image" content="https://atikul-itc.github.io/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Atikul Hoque</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-head">
+      <div class="eyebrow">Research</div>
+      <h1>Measuring change in drylands</h1>
+      <p class="lead">Woody plant encroachment has converted large areas of semi-arid grassland into shrubland, with consequences for forage, carbon, erosion, and fire. My work develops methods that can track this conversion consistently across scales, and connects it to drought and climate variability.</p>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><h2>Dissertation</h2><span class="muted small">Mapping and Monitoring of Shrub-Encroached Vegetation in Drylands Using Remote Sensing</span></div>
+        <article class="chapter">
+          <figure class="figure"><img src="assets/img/fig-review.webp" alt="Dashboard summarizing reviewed studies by location, sensor, and method" loading="lazy"><figcaption>Geographic and methodological distribution of the reviewed studies.</figcaption></figure>
+          <div>
+            <div class="label">Chapter 1</div>
+            <h3>What two decades of studies tell us about mapping shrubs</h3>
+            <p>A systematic review of 174 studies and 234 sensor and method configurations on remote sensing of woody vegetation in global drylands. The review examines how sensor choice and spatial resolution have shaped the mapping of shrub encroachment, and which questions remain open.</p>
+            <div class="tags"><span class="tag">Systematic review</span><span class="tag">Global drylands</span><span class="tag sand">In preparation</span></div>
+          </div>
+        </article>
+        <article class="chapter flip">
+          <figure class="figure"><img src="assets/img/fig-spectra.webp" alt="Spectral reflectance curves for photosynthetic vegetation, non-photosynthetic vegetation, and bare soil" loading="lazy"><figcaption>Mean reflectance and spread for the three cover classes.</figcaption></figure>
+          <div>
+            <div class="label">Chapter 2</div>
+            <h3>Separating green, dry, and bare surfaces from drone imagery</h3>
+            <p>A hybrid CNN-MLP that classifies photosynthetic vegetation, non-photosynthetic vegetation, and bare soil in UAS imagery of mesquite-encroached rangeland at the Jornada Experimental Range. Models are evaluated with leave-one-site-out cross-validation across 13 sites, and the analysis tests how spatial resolution and feature sets change accuracy.</p>
+            <div class="tags"><span class="tag">Deep learning</span><span class="tag">UAS</span><span class="tag">CNN-MLP</span><span class="tag sand">In preparation</span></div>
+          </div>
+        </article>
+        <article class="chapter">
+          <figure class="figure"><img src="assets/img/fig-fusion-workflow.webp" alt="Workflow from UAS classification to Sentinel-1 and Sentinel-2 fusion models" loading="lazy"><figcaption>Workflow linking UAS reference data to satellite fusion models.</figcaption></figure>
+          <div>
+            <div class="label">Chapter 3</div>
+            <h3>Fractional shrub cover from Sentinel-1 and Sentinel-2</h3>
+            <p>An attention-based CNN fuses Sentinel-1 backscatter with Sentinel-2 reflectance to estimate fractional shrub cover on the 10 m grid. Reference cover comes from the Chapter 2 classifications aggregated to Sentinel-2 pixels. Fusion models are compared against single-sensor CNNs and a Random Forest baseline.</p>
+            <div class="tags"><span class="tag">SAR and optical fusion</span><span class="tag">Attention CNN</span><span class="tag">Fractional cover</span><span class="tag sand">In preparation</span></div>
+          </div>
+        </article>
+        <article class="chapter flip">
+          <figure class="figure"><img src="assets/img/fig-uas-to-s2.webp" alt="UAS orthomosaic, classified map, Sentinel-2 image, and aggregated fractional cover" loading="lazy"><figcaption>From a UAS orthomosaic to fractional cover on the Sentinel-2 grid.</figcaption></figure>
+          <div>
+            <div class="label">Chapter 4</div>
+            <h3>When should we look? Climate-informed retrieval timing</h3>
+            <p>Shrubs and grasses green up at different times, so the acquisition date changes how separable they are. This ongoing chapter uses Sentinel-2 time series and climate records to identify when fractional shrub cover can be retrieved most reliably, and how that window varies between years.</p>
+            <div class="tags"><span class="tag">Phenology</span><span class="tag">Sentinel-2 time series</span><span class="tag sand">Ongoing</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><h2>Other projects</h2></div>
+        <div class="grid-2">
+          <div class="theme">
+            <h3>EcoDRI: Ecological Drought Index</h3>
+            <p>A weekly, 5 km drought index for the conterminous United States (2001–2025). It blends vegetation, thermal, and soil moisture condition with 90-day precipitation anomalies, weighted by Köppen–Geiger climate zone, and is calibrated against the U.S. Drought Monitor.</p>
+            <div class="tags"><a class="tag sand" href="https://github.com/Atikul-itc/EcoDRI-CONUS">Code on GitHub</a><span class="tag">Google Earth Engine</span></div>
+          </div>
+          <div class="theme">
+            <h3>Rice phenology across Bangladesh</h3>
+            <p>Sentinel-1 and Sentinel-2 time series used to estimate Boro rice growth stages at 10 m and compare their timing across climatic zones.</p>
+            <div class="tags"><a class="tag sand" href="https://doi.org/10.1007/s40003-025-00921-z">Paper</a><span class="tag">Agricultural Research, 2026</span></div>
+          </div>
+          <div class="theme">
+            <h3>Winter wheat phenology in Germany</h3>
+            <p>MSc research and DLR internship on the variability of winter wheat phenology in Brandenburg, combining Sentinel-1 and Sentinel-2 time series with gridded weather and soil data.</p>
+            <div class="tags"><span class="tag">ITC and DLR</span></div>
+          </div>
+          <div class="theme">
+            <h3>Collaborative mapping</h3>
+            <p>Analytical support for optical and radar land cover change mapping in north-central Panama and for GeoAI prediction of acequia distribution in New Mexico.</p>
+            <div class="tags"><span class="tag">GeoAI</span><span class="tag">Land cover</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><h2>In the field</h2><span class="muted small">FAA Part 107 certified remote pilot</span></div>
+        <div class="gallery">
+          <figure><img src="assets/img/field-mesquite.jpg" alt="Honey mesquite shrub in a desert grassland" loading="lazy"><figcaption>Honey mesquite, Jornada Experimental Range</figcaption></figure>
+          <figure><img src="assets/img/field-yucca.jpg" alt="Yucca on sandy soil" loading="lazy"><figcaption>Soaptree yucca on a sandy plain</figcaption></figure>
+          <figure><img src="assets/img/field-shrub.jpg" alt="Leafless shrub in a dryland field site" loading="lazy"><figcaption>Shrub canopy outside the growing season</figcaption></figure>
+          <figure><img src="assets/img/field-uas.jpg" alt="Atikul Hoque preparing a drone flight beside a field" loading="lazy"><figcaption>Preparing a UAS flight</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <address>
+        <strong>Atikul Hoque</strong><br>
+        Department of Geography and Environmental Studies<br>
+        New Mexico State University, Las Cruces, NM 88003<br>
+        <a href="mailto:atikul@nmsu.edu">atikul@nmsu.edu</a>
+      </address>
+      <div class="links">
+        <a href="https://scholar.google.com/citations?user=0AgT_FwAAAAJ&hl=en">Google Scholar</a>
+        <a href="https://github.com/Atikul-itc">GitHub</a>
+        <a href="https://linkedin.com/in/atikulhoq/">LinkedIn</a>
+        <a href="assets/Atikul_Hoque_CV.pdf">CV (PDF)</a>
+      </div>
+    </div>
+    <div class="wrap copy small muted">&copy; <span id="year">2026</span> Atikul Hoque</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
